@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 127, 177);
+  align-items: center;
+  padding: 0 0.5em;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+}
+
+.header button {
+  align-self: flex-end;
+  padding: 0.3em;
+}
+
+.container {
+  margin-top: 3em;
+  width: 100%;
+}
+
+.recipes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+}
+
+.food {
+  height: 20em;
+  width: 13em;
+  margin: 0.3em;
+  border-radius: 0.5em;
+}
+
+.img-food {
+  height: 60%;
+}
+
+.img-food img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.food-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.3em;
+  height: 3.3em;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: calc(-3.3em / 2);
+  left: calc(9em / 2);
+}
+
+.food .food-info {
+  height: 40%;
+  padding: calc(3.3em / 2) 0.2em 0.2em 0.2em;
+  position: relative;
+}
+
+.food .food-name {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.food-name button {
+  margin-top: 1em;
+  padding: 0.5em;
+}
